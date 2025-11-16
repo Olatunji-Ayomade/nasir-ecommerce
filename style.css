@@ -1,0 +1,81 @@
+body {
+    background: #111;
+    color: white;
+}
+
+.product-card {
+    position: relative;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #222;
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity .3s ease;
+}
+
+.product-card:hover img {
+    opacity: 0.25;
+}
+
+.product-info {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    transition: opacity .3s ease;
+}
+
+.product-card:hover .product-info {
+    opacity: 1;
+}
+
+.price {
+    font-weight: bold;
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    border-radius: 8px;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.contact-icon img {
+    width: 55px; /* bigger icons */
+    height: 55px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-icon:hover img {
+    transform: scale(1.2);
+}

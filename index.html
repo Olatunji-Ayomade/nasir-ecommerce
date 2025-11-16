@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasir Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background:#111; color:white;">
+
+    <!-- HEADER / NAVBAR -->
+<header>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg px-4 py-3 shadow-sm">
+        <a class="navbar-brand fs-3 fw-bold" href="#" style="letter-spacing:1px;">
+            Nasir Store
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto me-4">
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-6" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-6" href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-6" href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <button class="btn btn-warning position-relative" data-bs-toggle="modal" data-bs-target="#cartModal">
+                Cart
+                <span id="cart-count"
+                    class="badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO CAROUSEL -->
+<div id="heroCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.Zr3H7f3qvkgHzkL--C2RiQAAAA?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                class="d-block w-100" style="height: 450px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+                <h3 class="fw-bold">Latest Smartphones</h3>
+                <p>Shop the newest phones at the best prices in Nigeria.</p>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.Z59Sc9kxbI8qYkdRvJHtlQHaF7?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                class="d-block w-100" style="height: 450px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+                <h3 class="fw-bold">Trendy Footwear</h3>
+                <p>Step up your style with top quality shoes.</p>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1600"
+                class="d-block w-100" style="height: 450px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+                <h3 class="fw-bold">Premium Laptops</h3>
+                <p>Powerful laptops for school, work and business.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+
+
+    <!-- PRODUCTS -->
+    <div id="products" class="container my-5">
+        <h2 class="text-center text-white mb-4">Our Products</h2>
+        <div class="row g-4">
+
+            <!-- ==================== ROW 1 ==================== -->
+
+            <!-- iPhone 13 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.Nn11JQqBQ3A9o24ybh4AiAHaJc?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
+                    <div class="product-info">
+                        <h5>iPhone 13</h5>
+                        <p>128GB • Super Retina OLED • Dual Camera</p>
+                        <span class="price">₦ 620,000</span>
+                        <button class="btn btn-warning add-btn"
+                            data-id="1"
+                            data-name="iPhone 13pro"
+                            data-price="620000"
+                            data-img="https://tse4.mm.bing.net/th/id/OIP.Nn11JQqBQ3A9o24ybh4AiAHaJc?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Samsung S21 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://th.bing.com/th/id/R.4fe2286491fdf5c6f7eaddd0fc0d7931?rik=Xm4nc5VKkCCcBQ&pid=ImgRaw&r=0">
+                    <div class="product-info">
+                        <h5>Samsung S21</h5>
+                        <p>128GB • AMOLED Display • Triple Camera</p>
+                        <span class="price">₦ 480,000</span>
+                        <button class="btn btn-warning add-btn"
+                            data-id="2"
+                            data-name="Samsung S21"
+                            data-price="480000"
+                            data-img="https://th.bing.com/th/id/R.4fe2286491fdf5c6f7eaddd0fc0d7931?rik=Xm4nc5VKkCCcBQ&pid=ImgRaw&r=0">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tecno Camon30 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://images.priceoye.pk/tecno-camon-30-pakistan-priceoye-irvgx.jpg">
+                    <div class="product-info">
+                        <h5>Tecno Camon30</h5>
+                        <p>256GB • Curved AMOLED • 50MP Camera</p>
+                        <span class="price">₦ 310,000</span>
+                        <button class="btn btn-warning add-btn"
+                            data-id="3"
+                            data-name="Tecno Phantom"
+                            data-price="310000"
+                            data-img="https://images.priceoye.pk/tecno-camon-30-pakistan-priceoye-irvgx.jpg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Xiaomi Redmi Note 12 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://cdn.kalvo.com/uploads/img/gallery/49669-xiaomi-redmi-note-12-4g-7.jpg">
+                    <div class="product-info">
+                        <h5>Redmi Note 12</h5>
+                        <p>128GB • AMOLED 120Hz • 50MP Camera</p>
+                        <span class="price">₦ 145,000</span>
+                        <button class="btn btn-warning add-btn"
+                            data-id="4"
+                            data-name="Redmi Note 12"
+                            data-price="145000"
+                            data-img="https://cdn.kalvo.com/uploads/img/gallery/49669-xiaomi-redmi-note-12-4g-7.jpg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== ROW 2 ==================== -->
+
+            <!-- Nike Air Max -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://i5.walmartimages.com/asr/f02e247b-12d6-4ed7-a5fa-45fcdec6bdf1.d4801b402256f77ff1b0326b60cab241.jpeg">
+                    <div class="product-info">
+                        <h5>Nike Air Max</h5>
+                        <p>Comfort Foam • Lightweight • Original</p>
+                        <span class="price">₦ 45,000</span>
+                        <button class="btn btn-warning add-btn"
+                            data-id="5"
+                            data-name="Nike Air Max"
+                            data-price="45000"
+                            data-img="https://i5.walmartimages.com/asr/f02e247b-12d6-4ed7-a5fa-45fcdec6bdf1.d4801b402256f77ff1b0326b60cab241.jpeg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adidas Superstar -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://assets.adidas.com/images/w_1880,f_auto,q_auto/e75d90ba64ed4c47ac30c74490090bf5_9366/IG9777_01_standard.jpg">
+                    <div class="product-info">
+                        <h5>Adidas Superstar</h5>
+                        <p>Classic Leather • Anti-Slip Grip</p>
+                        <span class="price">₦ 38,000</span>
+                        <button class="btn btn-warning add-btn"
+                            data-id="6"
+                            data-name="Adidas Superstar"
+                            data-price="38000"
+                            data-img="https://assets.adidas.com/images/w_1880,f_auto,q_auto/e75d90ba64ed4c47ac30c74490090bf5_9366/IG9777_01_standard.jpg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jordan Retro -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-Heritage-PS-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1675062545">
+                    <div class="product-info">
+                        <h5>Air Jordan Retro</h5>
+                        <p>Basketball Sneakers • Premium Build</p>
+                        <span class="price">₦ 69,000</span>
+                        <button class="btn btn-warning add-btn"
+                            data-id="7"
+                            data-name="Air Jordan Retro"
+                            data-price="69000"
+                            data-img="https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-Heritage-PS-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1675062545">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timberland Boots -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.bRHFNiSWn4yt_2E4CpbRiAHaHa?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
+                    <div class="product-info">
+                        <h5>Timberland Boot</h5>
+                        <p>Leather • Waterproof • Durable</p>
+                        <span class="price">₦ 85,000</span>
+                        <button class="btn btn-warning add-btn"
+                            data-id="8"
+                            data-name="Timberland Boot"
+                            data-price="85000"
+                            data-img="https://tse2.mm.bing.net/th/id/OIP.bRHFNiSWn4yt_2E4CpbRiAHaHa?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== ROW 3 ==================== -->
+
+            <!-- HP Pavilion -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP._qHi2lQhd3xccKNt_K6-9AHaHa?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
+                    <div class="product-info">
+                        <h5>HP Pavilion</h5>
+                        <p>Intel i5 • 8GB RAM • 512GB SSD</p>
+                        <span class="price">₦ 350,000</span>
+                        <button class="btn btn-warning add-btn"
+                            data-id="9"
+                            data-name="HP Pavilion"
+                            data-price="350000"
+                            data-img="https://tse4.mm.bing.net/th/id/OIP._qHi2lQhd3xccKNt_K6-9AHaHa?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dell Inspiron -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://i0.wp.com/laptopmedia.com/wp-content/uploads/2017/07/81xLD10Le9L._SL1500_-1.jpg?fit=1200%2C983">
+                    <div class="product-info">
+                        <h5>Dell Inspiron</h5>
+                        <p>Intel i7 • 16GB RAM • 512GB SSD</p>
+                        <span class="price">₦ 460,000</span>
+                        <button class="btn btn-warning add-btn"
+                            data-id="10"
+                            data-name="Dell Inspiron"
+                            data-price="460000"
+                            data-img="https://i0.wp.com/laptopmedia.com/wp-content/uploads/2017/07/81xLD10Le9L._SL1500_-1.jpg?fit=1200%2C983">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lenovo ThinkPad -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://www.notebookcheck.net/fileadmin/Notebooks/Lenovo/ThinkPad_25/thinkpad2517.jpg">
+                    <div class="product-info">
+                        <h5>Lenovo ThinkPad</h5>
+                        <p>Intel i5 • 16GB RAM • 256GB SSD</p>
+                        <span class="price">₦ 390,000</span>
+                        <button class="btn btn-warning add-btn"
+                            data-id="11"
+                            data-name="Lenovo ThinkPad"
+                            data-price="390000"
+                            data-img="https://www.notebookcheck.net/fileadmin/Notebooks/Lenovo/ThinkPad_25/thinkpad2517.jpg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MacBook Air -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/09/dark-color-macbook-air-in-an-apple-store.jpg">
+                    <div class="product-info">
+                        <h5>MacBook Air M1</h5>
+                        <p>8GB RAM • 256GB SSD • Retina Display</p>
+                        <span class="price">₦ 780,000</span>
+                        <button class="btn btn-warning add-btn"
+                            data-id="12"
+                            data-name="MacBook Air M1"
+                            data-price="780000"
+                            data-img="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/09/dark-color-macbook-air-in-an-apple-store.jpg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CART MODAL -->
+    <div class="modal fade" id="cartModal">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title">Your Cart</h5>
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="cart-items"></div>
+
+                <div class="p-3">
+                    <h5>Total: ₦ <span id="cart-total">0</span></h5>
+                    <button id="clear-cart" class="btn btn-danger me-2">Clear Cart</button>
+                    <button id="checkout" class="btn btn-success w-100 mt-3">Checkout</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+
+    <div class="contact-icons">
+
+        <a href="https://mail.google.com/mail/?view=cm&to=olatunjinasir58@gmail.com" 
+   class="contact-icon" 
+   target="_blank">
+    <img src="https://img.icons8.com/color/48/gmail-new.png" alt="Gmail">
+    </a>
+
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/2348101306497" class="contact-icon" target="_blank">
+            <img src="https://img.icons8.com/color/48/whatsapp.png" alt="WhatsApp">
+        </a>
+
+        <!-- Phone -->
+        <a href="tel:+2348101306497" class="contact-icon" target="_blank">
+            <img src="https://img.icons8.com/color/48/phone.png" alt="Phone">
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/YOUR-LINK" class="contact-icon" target="_blank">
+            <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn">
+        </a>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="text-center py-3 text-secondary">
+  © 2025 Olatunji Nasir Ayomade. All rights reserved.
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
